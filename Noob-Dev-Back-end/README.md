@@ -31,3 +31,12 @@
     * docker commands: docker-compose run web <commandline>
         + Eg: docker compose run web bundle install
 
+#### DEPLOY ON HEROKU
+    * Download & install Heroku on https://devcenter.heroku.com/articles/heroku-cli
+    * Login Heroku: heroku login
+    * For a new heroku git repo: 
+        - Create heroku repo: heroku create
+        - Push code from master branch to heroku repo: git subtree push --prefix Noob-Dev-Back-end heroku master
+    * For a Heroku existing git repo: 
+        - Remote to heroku repo: heroku git:remote -a <your Heroku app’s name>
+        - Push code from master branch to heroku repo: git subtree push --prefix Noob-Dev-Back-end heroku master

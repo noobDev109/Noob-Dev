@@ -13,9 +13,17 @@ console.log('Hello World from Webpacker')
 import TurbolinksAdapter from 'vue-turbolinks'
 import Vue from 'vue/dist/vue.esm'
 import App from '../app.vue'
+import noobNavbar from '../components/noob_Navbar.vue'
+import noobSliderInfo from '../components/noob_SliderInfo.vue'
+import noobFooter from '../components/noob_Footer.vue'
+import noobCopyright from '../components/noob_Copyright.vue'
 
 Vue.use(TurbolinksAdapter)
 Vue.component('ndApp', App);
+Vue.component('noobNavbar', noobNavbar);
+Vue.component('noobSliderInfo', noobSliderInfo)
+Vue.component('noobFooter', noobFooter)
+Vue.component('noobCopyright', noobCopyright)
 
 document.addEventListener('turbolinks:load', () => {
   const app = new Vue({
